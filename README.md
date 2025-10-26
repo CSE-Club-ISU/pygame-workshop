@@ -73,8 +73,49 @@ An interactive, simple tutorial to make a game with Python using pygame
                 pygame.quit()
                 sys.exit()
 
-            # game code will go here!
+            # game logic will go here!
 
+            # draw logic will go here!
+
+            # refresh the window
+            pygame.display.update()
             # update the clock. `clock.tick()` takes one argument, framerate
             clock.tick(60)
+    ```
+
+## Useful Pygame Functions
+
+### Drawing
+
+    ```python
+    # draw a rectangle
+    # PARAMS:
+    # screen is the window
+    # color is the color of the rectangle. simplest is to pass a tuple of RGB values, e.g. (255, 0, 0)
+    # rect is the rectangle, a tuple of (x, y, width, height)
+        # x is left to right position of top left corner of the rectangle
+        # y is top to bottom position of top left corner of the rectangle
+        # width is the width of the rectangle (left to right)
+        # height is the height of the rectangle (top to bottom)
+    pygame.draw.rect(screen, color, rect)
+
+    # draw a circle
+    # PARAMS:
+    # center is a point (a tuple of (x, y) coordinates)
+    pygame.draw.circle(screen, color, center, radius)
+
+    # draw a line
+    # PARAMS:
+    # start and end are points
+    pygame.draw.line(screen, color, start, end)
+    ```
+
+### Input Events
+
+    ```python
+    # get the current state of the keys
+    keys = pygame.key.get_pressed()
+    # if 'a' key is pressed
+    if keys[pygame.K_a]:
+        # do something
     ```
