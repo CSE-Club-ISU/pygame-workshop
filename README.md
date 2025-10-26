@@ -32,26 +32,35 @@ An interactive, simple tutorial to make a game with Python using pygame
 ## Basic Pygame Setup
 1. First, in your main `.py` file, import the pygame library
 
-    `import pygame`
+    ```python
+    import pygame
+    ```
 
 2. After pygame is imported, initialize pygame by calling the pygame's `init` function
 
-    `pygame.init()`
+    ```python
+    import pygame
+
+    pygame.init()
+    ```
 
 3. Now, we can setup the window and the 'clock' (games internal timer)
 
     ```python
-        # variables for the window size
-        WIDTH, HEIGHT = 800, 600
-        # init a pygame window. the set_mode function takes in a tuple (similar to a list, but immutable) for the window size
-        screen = pygame.display.set_mode((WIDTH, HEIGHT))
-        # initialize the clock
-        clock = pygame.time.Clock()
+    # ...
+
+    # variables for the window size
+    WIDTH, HEIGHT = 800, 600
+    # init a pygame window. the set_mode function takes in a tuple (similar to a list, but immutable) for the window size
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    # initialize the clock
+    clock = pygame.time.Clock()
     ```
 
 4. Now, we can setup the game loop
 
     ```python
+    # ...
 
     game_over = False
 
