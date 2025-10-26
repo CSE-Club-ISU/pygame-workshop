@@ -128,3 +128,9 @@ keys = pygame.key.get_pressed()
 if keys[pygame.K_a]:
     # do something
 ```
+
+The official documentation can be found [here](https://www.pygame.org/docs/), including basic examples. 
+
+Your IDE (more specifically, the language server which your IDE manages) can also be very helpful when navigating external libraries.
+
+Don't forget the [Python Cheatsheet](https://quickref.me/python) and [Learn X in Y Minutes (Python Edition)](https://learnxinyminutes.com/python/) for Python things too.
