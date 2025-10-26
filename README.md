@@ -1,11 +1,20 @@
 # pygame-workshop
 An interactive, simple tutorial to make a game with Python using pygame
 
+## Table of Contents
+- [Environment Setup](#environment-setup)
+- [Basic Pygame Setup](#basic-pygame-setup)
+- [Useful Pygame Functions](#useful-pygame-functions)
+
 ## Environment Setup
 
 ### Install Python
 
 - [Official Download](https://www.python.org/downloads/)
+
+- If you are unfamiliar Python, don't worry! Here are some great quickstart guides for your reference:
+    - [Python Cheatsheet](https://quickref.me/python)
+    - [Learn X in Y Minutes (Python Edition)](https://learnxinyminutes.com/python/)
 
 ### Setup your development environment
 
