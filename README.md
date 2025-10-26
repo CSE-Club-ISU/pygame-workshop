@@ -17,15 +17,15 @@ An interactive, simple tutorial to make a game with Python using pygame
 
   1. In your terminal, while in the project directroy, run
 
-    `python -m venv venv`
+  `python -m venv venv`
 
-    > If this doesn't work, try `python3 -m venv venv`
+  > If this doesn't work, try `python3 -m venv venv`
 
   2. Then, to activate the virtual environment, run
 
-    MacOS: `source venv/bin/activate`
+  MacOS: `source venv/bin/activate`
 
-    Windows: `venv\Scripts\activate`
+  Windows: `venv\Scripts\activate`
 
 4. Install pygame
 
