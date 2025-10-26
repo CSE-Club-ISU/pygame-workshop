@@ -129,7 +129,7 @@ if keys[pygame.K_a]:
     # do something
 ```
 
-The official documentation can be found [here](https://www.pygame.org/docs/), including basic examples. 
+The official pygame documentation can be found [here](https://www.pygame.org/docs/), including basic examples. 
 
 Your IDE (more specifically, the language server which your IDE manages) can also be very helpful when navigating external libraries.
 
