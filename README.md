@@ -67,21 +67,21 @@ while  run:
             pygame.quit()
             sys.exit()
 
-        # game logic will go here!
+    # game logic will go here!
 
-        # draw logic will go here!
-        ## clear the screen every frame before re-drawing
-        screen.fill((0, 0, 0))
-        ## custom drawing logic goes here
-        ## ...
-        ## update the display with the newly drawn frame
-        pygame.display.update()
+    # draw logic will go here!
+    ## clear the screen every frame before re-drawing
+    screen.fill((0, 0, 0))
+    ## custom drawing logic goes here
+    ## ...
+    ## update the display with the newly drawn frame
+    pygame.display.update()
 
-        # update the clock. `clock.tick()` takes one argument, framerate
-        # this needs to be called once per frame
-        # if you are curious to how this works, look up pygame.time.Clock documentation,
-        # then look for the tick() function
-        clock.tick(60)
+    # update the clock. `clock.tick()` takes one argument, framerate
+    # this needs to be called once per frame
+    # if you are curious to how this works, look up pygame.time.Clock documentation,
+    # then look for the tick() function
+    clock.tick(60)
 ```
 
 ## Useful Pygame Functions
