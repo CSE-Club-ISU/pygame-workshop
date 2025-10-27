@@ -85,9 +85,13 @@ An interactive, simple tutorial to make a game with Python using pygame
             # game logic will go here!
 
             # draw logic will go here!
-
-            # refresh the window
+            ## clear the screen every frame before re-drawing
+            screen.fill((0, 0, 0))
+            ## custom drawing logic goes here
+            ## ...
+            ## update the display with the newly drawn frame
             pygame.display.update()
+
             # update the clock. `clock.tick()` takes one argument, framerate
             clock.tick(60)
     ```
