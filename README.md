@@ -26,6 +26,7 @@ An interactive, simple tutorial to make a game with Python using pygame
     1. In your terminal, while in the project directroy, run `python -m venv venv`.
         - This will create a new folder called `venv` in your project directory
         - This folder will contain the python packages, like `pygame`, you install for the project
+        - If you don't use a virtual environment (venv), you will end up installing everything globally and potentially run into conflicts and other issues
 
         >If you get an error, try running `python3 -m venv venv`
 
