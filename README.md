@@ -39,16 +39,18 @@ An interactive, simple tutorial to make a game with Python using pygame
 5. Create the python file for the game!
 
 ## Basic Pygame Setup
-1. First, in your main `.py` file, import the pygame library
+1. First, in your main `.py` file, import the `sys` and `pygame` library
 
     ```python
+    import sys
+
     import pygame
     ```
 
 2. After pygame is imported, initialize pygame by calling the pygame's `init` function
 
     ```python
-    import pygame
+    # ...
 
     pygame.init()
     ```
@@ -71,10 +73,10 @@ An interactive, simple tutorial to make a game with Python using pygame
     ```python
     # ...
 
-    game_over = False
+    run = True
 
     # game loop. when you run this python file, the program will spend most of its time in this loop
-    while not game_over:
+    while run:
         # event loop
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
