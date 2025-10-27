@@ -125,6 +125,7 @@ while run:
     # quit the game if the player closes the window
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            pygame.quit()
             sys.exit()
 
     # game logic
