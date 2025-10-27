@@ -39,64 +39,50 @@ An interactive, simple tutorial to make a game with Python using pygame
 5. Create the python file for the game!
 
 ## Basic Pygame Setup
-1. First, in your main `.py` file, import the `sys` and `pygame` library
+Copy and paste the following code into your main `.py` file to get started. There are comments which explain the jist of the code.
 
-    ```python
-    import sys
+```python
+# imports
+import sys
 
-    import pygame
-    ```
+import pygame
 
-2. After pygame is imported, initialize pygame by calling the pygame's `init` function
+# initialize pygame
+pygame.init()
 
-    ```python
-    # ...
+# variables for the window size
+WIDTH, HEIGHT = 800, 600
+# init a pygame window. the set_mode function takes in a tuple (similar to a list, but immutable) for the window size
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+# initialize the clock
+clock = pygame.time.Clock()
 
-    pygame.init()
-    ```
+# game loop. when you run this python file, the program will spend most of its time in this loop
+run = True
+while  run:
+    # event loop
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            # if the user closes the window, exit the game loop
+            pygame.quit()
+            sys.exit()
 
-3. Now, we can setup the window and the 'clock' (games internal timer)
+        # game logic will go here!
 
-    ```python
-    # ...
+        # draw logic will go here!
+        ## clear the screen every frame before re-drawing
+        screen.fill((0, 0, 0))
+        ## custom drawing logic goes here
+        ## ...
+        ## update the display with the newly drawn frame
+        pygame.display.update()
 
-    # variables for the window size
-    WIDTH, HEIGHT = 800, 600
-    # init a pygame window. the set_mode function takes in a tuple (similar to a list, but immutable) for the window size
-    screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    # initialize the clock
-    clock = pygame.time.Clock()
-    ```
-
-4. Now, we can setup the game loop
-
-    ```python
-    # ...
-
-    run = True
-
-    # game loop. when you run this python file, the program will spend most of its time in this loop
-    while run:
-        # event loop
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                # if the user closes the window, exit the game loop
-                pygame.quit()
-                sys.exit()
-
-            # game logic will go here!
-
-            # draw logic will go here!
-            ## clear the screen every frame before re-drawing
-            screen.fill((0, 0, 0))
-            ## custom drawing logic goes here
-            ## ...
-            ## update the display with the newly drawn frame
-            pygame.display.update()
-
-            # update the clock. `clock.tick()` takes one argument, framerate
-            clock.tick(60)
-    ```
+        # update the clock. `clock.tick()` takes one argument, framerate
+        # this needs to be called once per frame
+        # if you are curious to how this works, look up pygame.time.Clock documentation,
+        # then look for the tick() function
+        clock.tick(60)
+```
 
 ## Useful Pygame Functions
 
