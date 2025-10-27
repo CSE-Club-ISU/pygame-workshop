@@ -70,7 +70,7 @@ def update_enemy_positions():
     enemy_list[:] = [e for e in enemy_list if e[1] < HEIGHT]
 
 # check for collisions by checking manually for overlap
-def collision_check(enemy_list, player_pos):
+def collision_check():
     # player corners
     player_left = player_pos[0]
     player_right = player_pos[0] + player_size
@@ -94,7 +94,7 @@ def collision_check(enemy_list, player_pos):
     return False
 
 # check for collisions by using pygame built-in rectangle collision detection
-def collision_check_lib(enemy_list, player_pos):
+def collision_check_lib():
     # player boundaries
     player_rect = pygame.Rect(player_pos[0], player_pos[1], player_size, player_size)
 
@@ -131,6 +131,8 @@ while run:
     handle_player_movement()
     spawn_enemy()
     update_enemy_positions()
+    if collision_check():
+        run = False
 
     # draw logic
     ## clear the screen every frame before re-drawing
@@ -139,10 +141,6 @@ while run:
     draw_enemies()
     ## update the display with the newly drawn frame
     pygame.display.update()
-
-    # check for collisions
-    if collision_check(enemy_list, player_pos):
-        run = False
 
     # this needs to be called once per frame
     # if you are curious to how this works, look up pygame.time.Clock documentation,
