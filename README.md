@@ -22,7 +22,22 @@ An interactive, simple tutorial to make a game with Python using pygame
 
 2. Open a terminal in your project directory
 
-3. Setup a virtual environment
+    A reminder that the following are all terminals
+    - Command Prompt or Git Bash for Windows
+    - Terminal for MacOS
+    - The terminal (ctrl+shift+~ on VSCode) built into your IDE
+
+    Also, some basic terminal commands for navigation. `<thing>` notates an _argument_ named _thing_ which is passed to the _command_
+   - `cd <directory>` to **C**hange **D**irectory or "move" around in your file system. e.g. `cd /` or `cd /Users/alex` or `cd \Users\alex`
+   - `ls`, which stsands for **list**, will list everything* in the directory you are currently in
+       - *not true without certain a flag, but don't worry about that
+   - `pwd`, which stands for **P**rint **W**orking **D**irectory, will print your working directory to the terminal
+
+    Hopefully these will get you where you need to go 👍
+
+4. Setup a virtual environment
+
+    **IMPORTANT NOTE:** Your IDE (PyCharm, Intellij) may **already do this for you**. If, when creating a project via a 'new project' or similar button, you see any inputs about creating a new 'Virtual environment' or 'venv', **skip this step**.
     1. In your terminal, while in the project directroy, run `python -m venv venv`.
         - This will create a new folder called `venv` in your project directory
         - This folder will contain the python packages, like `pygame`, you install for the project
@@ -33,11 +48,12 @@ An interactive, simple tutorial to make a game with Python using pygame
     2. Then, activate the virtual environment by running the activation script
         - MacOS: `source venv/bin/activate`
         - Windows: `venv\Scripts\activate`
+        > If you get an error regarding running the script, try running the command (in the same directory) in Command Prompt.
 
-4. Install pygame by running `pip install pygame`
+5. Install pygame by running `pip install pygame`
     - `pip` is a package manager for python; use it to install packages you need for your project
 
-5. Create the python file for the game!
+6. Create the python file for the game!
 
 ## Basic Pygame Setup
 Copy and paste the following code into your main `.py` file to get started. There are comments which explain the jist of the code.
